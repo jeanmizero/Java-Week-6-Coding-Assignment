@@ -7,8 +7,15 @@ import org.junit.jupiter.api.Test;
 class CardTest {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void testToString() {
+		// Given: a Card
+		Card card = new Card("Justin", "Heart", 52);
+		
+		// When: the toString method is called
+		String result  = card.toString();
+		
+		//Then: the result is collect
+		assertEquals("Card: Jean of Heart: 52", result);
 	}
 
 }
